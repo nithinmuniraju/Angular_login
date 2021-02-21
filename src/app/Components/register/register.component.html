@@ -1,6 +1,6 @@
 <div class="banner">
     <div class="mt-5 container p-4">
-        <form>
+        <form (submit)="submitRegister()">
             <div class="row">
                 <div class="form-group col-sm-6">
                     <label for="first_name">First Name</label>
@@ -41,8 +41,8 @@
                     <input type="password" class="form-control" id="confirm-password" placeholder="Password">
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary btn-register">Register</button>
-            <button class="btn btn-primary btn-register" [routerLink]="['/login']">Register</button>
+            <button type="submit" class="btn btn-outline-warning btn-register">Register</button>
         </form>
+        <!-- <button class="btn btn-link-primary text-warning float-right" routerLink="">already signed??</button> -->
     </div>
 </div>
